@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Outfit:wght@300;500;700&display=swap");
+.calc-wrap {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+.calculator {
+  background: #1a1a1f;
+  border-radius: 24px;
+  padding: 24px;
+  width: 100%;
+  max-width: 340px;
+  border: 1px solid #2e2e38;
+}
+.display {
+  background: #0e0e12;
+  border-radius: 14px;
+  padding: 20px 18px 14px;
+  margin-bottom: 20px;
+  min-height: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+.display .expr {
+  font-family: "Share Tech Mono", monospace;
+  font-size: 13px;
+  color: #555566;
+  min-height: 18px;
+  word-break: break-all;
+  text-align: right;
+}
+.display .val {
+  font-family: "Share Tech Mono", monospace;
+  font-size: 36px;
+  font-weight: 400;
+  color: #f0ead8;
+  letter-spacing: 1px;
+  word-break: break-all;
+  line-height: 1.1;
+}
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+.btn-calc {
+  border: none;
+  border-radius: 12px;
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  width: 100%;
+  height: 62px;
+  cursor: pointer;
+  transition:
+    transform 0.08s ease,
+    background 0.1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-calc:active {
+  transform: scale(0.92);
+}
+.btn-num {
+  background: #26262f;
+  color: #e8e2d4;
+}
+.btn-num:hover {
+  background: #31313c;
+}
+.btn-op {
+  background: #2a2417;
+  color: #e8a733;
+}
+.btn-op:hover {
+  background: #352d1e;
+}
+.btn-op.active-op {
+  background: #e8a733;
+  color: #1a1a1f;
+}
+.btn-ac {
+  background: #2e1f1f;
+  color: #e05555;
+}
+.btn-ac:hover {
+  background: #3a2626;
+}
+.btn-eq {
+  background: #e8a733;
+  color: #1a1a1f;
+  font-weight: 700;
+  height: 100px;
+  width: 100%;
+  border: none;
+  border-radius: 12px;
+  font-family: "Outfit", sans-serif;
+  font-size: 22px;
+  cursor: pointer;
+  transition:
+    transform 0.08s ease,
+    background 0.1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+.btn-eq:hover {
+  background: #f0b944;
+}
+.btn-eq:active {
+  transform: scale(0.97);
+}
